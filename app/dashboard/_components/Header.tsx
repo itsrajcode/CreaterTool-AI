@@ -8,9 +8,6 @@ function Header() {
             <Search />
             <input type = "text" placeholder="Search..." className='outline-none p-1'/>
         </div>
-        <div>
-            <h2 className='bg-primary p-1 rounded-xl text-sm text-white px-2'>🔥 Join Membership just for $9.99/Month</h2>
-        </div>
     </div>
   )
 }

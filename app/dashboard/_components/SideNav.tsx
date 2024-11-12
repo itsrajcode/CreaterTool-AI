@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FileClock, Home, Settings, Wallet } from "lucide-react";
+import { FileClock, Home, Settings, Sparkles, Wallet } from "lucide-react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
@@ -35,7 +35,14 @@ function SideNav() {
   return (
     <div className="h-screen p-5 relative bg-white shadow-sm border">
       <div className="flex justify-center">
-        <Image src={"/logo.svg"} alt="logo" width={123} height={61} />
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded bg-gradient-to-r from-purple-600 to-purple-800 flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-white" />
+          </div>
+          <span className="text-xl font-bold">
+            Creator<span className="text-purple-600">Tool</span>
+          </span>
+        </div>
       </div>
       <hr className="my-5 border" />
       <div className="mt-5">

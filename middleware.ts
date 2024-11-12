@@ -6,7 +6,7 @@ export default clerkMiddleware(
 );
 
 const isProtectedRoute = createRouteMatcher ([
-    "/dashboard(.*)",
+    "/dashboard(.*)","/dashboard/settings/[[...rest]]/page.tsx"
 ])
 export const config = {
   matcher: [

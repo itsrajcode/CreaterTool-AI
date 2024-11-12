@@ -54,10 +54,10 @@ function UsageTrack() {
         <div className="h-2 bg-[#9981f9] rounded-full w-full mt-3">
           <div
             className="h-2 bg-white rounded-full"
-            style={{ width: `${(totalUsage / 10000) * 100}%` }}
+            style={{ width: `${(totalUsage / 100000) * 100}%` }}
           ></div>
         </div>
-        <h2 className="text-sm mt-2">{totalUsage}/10,000 credits used</h2>
+        <h2 className="text-sm mt-2">{totalUsage}/1,00,000 credits used</h2>
       </div>
       <Button
         variant="secondary"
